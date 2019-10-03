@@ -12,8 +12,8 @@ build:
     - conda activate fspr
   script:
     - pip install .
-    - sphinx-build doc sphinx
-    - sphinx-build -b doctest doc sphinx
+    - sphinx-build -aEW doc sphinx
+    - sphinx-build -aEb doctest doc sphinx
     - nosetests -sv --with-coverage --cover-html --cover-package=rr rr
   artifacts:
     expire_in: 1 week
