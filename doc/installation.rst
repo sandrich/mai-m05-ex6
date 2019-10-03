@@ -6,8 +6,12 @@
 Installation
 ------------
 
-This package depends on numpy_ and scipy_ to run properly. Please install a
-modern version of these packages before trying to run the code examples.
+Use pip:
+
+.. code-block:: sh
+
+   $ pip install --extra-index-url https://test.pypi.org/simple rr
+
 
 The tests on my paper were executed on a machine running a docker and using the
 docker image `fspr/lab:2019 <https://hub.docker.com/r/fspr/lab>`_.

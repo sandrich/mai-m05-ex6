@@ -12,7 +12,7 @@ command:
 
 .. code-block:: sh
 
-   $ python paper.py
+   $ rr-paper
 
 
 For your reference, the paper tables are repeated below, so you can check the
