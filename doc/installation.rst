@@ -13,8 +13,7 @@ Use pip:
    $ pip install --extra-index-url https://test.pypi.org/simple rr
 
 
-The tests on my paper were executed on a machine running a docker and using the
-docker image `fspr/lab:2019 <https://hub.docker.com/r/fspr/lab>`_.
-installation with Python 3.6.8.
+The tests on my paper were executed on a docker container using the image
+`fspr/lab:2019 <https://hub.docker.com/r/fspr/lab>`_.
 
 .. include:: links.rst
