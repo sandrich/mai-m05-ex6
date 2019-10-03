@@ -6,7 +6,7 @@
 Licensing
 ---------
 
-This work is licensed under the GPLv3_.
+This work is licensed under the 3-clause BSD License.
 
 .. include:: links.rst
 
