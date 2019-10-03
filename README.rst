@@ -1,3 +1,5 @@
+.. image:: http://img.shields.io/badge/docs-latest-orange.svg
+   :target: https://rr.readthedocs.io/en/latest/
 .. image:: https://gitlab.idiap.ch/software/master-ai-m05-ex6/badges/master/build.svg
    :target: https://gitlab.idiap.ch/software/master-ai-m05-ex6/commits/master
 .. image:: https://gitlab.idiap.ch/software/master-ai-m05-ex6/badges/master/coverage.svg
