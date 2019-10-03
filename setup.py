@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="rr",
-    version="1.0.0",
+    version="1.0.0b1",
     description="Basic example of a Reproducible Research Project in Python",
     url="https://gitlab.idiap.ch/master-ai/m05-ex6",
     license="BSD",
