@@ -6,3 +6,4 @@ sphinx/
 *.egg-info/
 .htmlcov/
 .cover/
+dist/
