@@ -1,9 +1,9 @@
-.. image:: https://gitlab.idiap.ch/software/m05-ex6/badges/master/build.svg
-   :target: https://gitlab.idiap.ch/software/m05-ex6/commits/master
-.. image:: https://gitlab.idiap.ch/software/m05-ex6/badges/master/coverage.svg
-   :target: https://gitlab.idiap.ch/software/m05-ex6/commits/master
+.. image:: https://gitlab.idiap.ch/software/master-ai-m05-ex6/badges/master/build.svg
+   :target: https://gitlab.idiap.ch/software/master-ai-m05-ex6/commits/master
+.. image:: https://gitlab.idiap.ch/software/master-ai-m05-ex6/badges/master/coverage.svg
+   :target: https://gitlab.idiap.ch/software/master-ai-m05-ex6/commits/master
 .. image:: https://img.shields.io/badge/gitlab-project-0000c0.svg
-   :target: https://gitlab.idiap.ch/software/m05-ex6
+   :target: https://gitlab.idiap.ch/software/master-ai-m05-ex6
 
 ===============================================================
  Reproducible Multi-Class Logistic Regression for Iris Flowers
