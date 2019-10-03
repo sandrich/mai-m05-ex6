@@ -12,11 +12,12 @@ setup(
     author="Andre Anjos",
     author_email="andre.anjos@idiap.ch",
     long_description=open("README.rst").read(),
+    long_description_content_type="text/x-rst",
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
     install_requires=["setuptools", "numpy", "scipy"],  # always required
-    entry_points={"console_scripts": ["paper.py = rr.paper:main"]},
+    entry_points={"console_scripts": ["rr-paper = rr.paper:main"]},
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
