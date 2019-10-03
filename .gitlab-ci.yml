@@ -1,5 +1,6 @@
 stages:
   - build
+  - deploy
 
 build:
   tags:
@@ -19,3 +20,23 @@ build:
     paths:
       - sphinx
       - cover
+
+
+deploy:
+  tags:
+    - docker
+  image: fspr/lab:2019
+  stage: deploy
+  environment: pypi
+  only:
+    - /^v\d+\.\d+\.\d+([abc]\d*)?$/  # PEP-440 compliant version (tags)
+  except:
+    - branches
+  before_script:
+    - source $CONDA_DIR/etc/profile.d/conda.sh
+    - conda activate fspr
+    - pip install twine
+  script:
+    - python setup.py sdist --formats=zip
+    - twine check dist/*.zip
+    - twine upload --repository-url https://test.pypi.org --username $PYPIUSER --password $PYPIPASS dist/*.zip
