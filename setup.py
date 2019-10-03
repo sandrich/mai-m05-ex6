@@ -3,6 +3,10 @@
 
 from setuptools import setup, find_packages
 
+def load_requirements(f):
+    retval = [str(k.strip()) for k in open(f, "rt")]
+    return [k for k in retval if k and k[0] not in ("#", "-")]
+
 setup(
     name="rr",
     version="1.0.0b1",
@@ -15,8 +19,7 @@ setup(
     long_description_content_type="text/x-rst",
     packages=find_packages(),
     include_package_data=True,
-    zip_safe=False,
-    install_requires=["setuptools", "numpy", "scipy"],  # always required
+    install_requires=load_requirements("requirements.txt"),
     entry_points={"console_scripts": ["rr-paper = rr.paper:main"]},
     classifiers=[
         "Development Status :: 4 - Beta",
