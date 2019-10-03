@@ -1,0 +1,2 @@
+include LICENSE README.rst buildout.cfg rr/data.csv
+recursive-include doc conf.py *.rst *.ico *.png

@@ -1,0 +1,21 @@
+stages:
+  - build
+
+build:
+  tags:
+    - docker
+  image: fspr/lab:2019
+  stage: build
+  before_script:
+    - source $CONDA_DIR/etc/profile.d/conda.sh
+    - conda activate fspr
+  script:
+    - pip install .
+    - sphinx-build doc sphinx
+    - sphinx-build -b doctest doc sphinx
+    - nosetests -sv --with-coverage --cover-html --cover-package=rr rr
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - sphinx
+      - cover
