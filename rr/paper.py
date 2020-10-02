@@ -101,7 +101,7 @@ def infer_impact_of_variables_all(tabnum):
 def main():
 
     print("Main script for Logistic Regression on Iris Flowers.")
-    test_impact_of_variables_single(1)
-    test_impact_of_variables_2by2(3)
-    test_impact_of_variables_3by3(5)
-    test_impact_of_variables_all(7)
+    infer_impact_of_variables_single(1)
+    infer_impact_of_variables_2by2(3)
+    infer_impact_of_variables_3by3(5)
+    infer_impact_of_variables_all(7)
