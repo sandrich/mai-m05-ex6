@@ -14,7 +14,7 @@ numpy.seterr(divide="ignore")
 from . import database, preprocessor, algorithm, analysis
 
 
-def test_one(protocol, variables):
+def infer_one(protocol, variables):
     """Runs one single test, returns the CER on the test set"""
 
     # 1. get the data from our preset API for the database
@@ -36,7 +36,7 @@ def test_one(protocol, variables):
     return analysis.CER(test_predictions, test_labels)
 
 
-def test_impact_of_variables_single(tabnum):
+def infer_impact_of_variables_single(tabnum):
     """Builds the first table of my report"""
 
     for n, p in enumerate(database.PROTOCOLS):
@@ -47,11 +47,11 @@ def test_impact_of_variables_single(tabnum):
         print(60 * "-")
 
         for k in database.VARIABLES:
-            result = test_one(p, [k])
+            result = infer_one(p, [k])
             print(("%-15s" % k), "| %d%%" % (100 * result,))
 
 
-def test_impact_of_variables_2by2(tabnum):
+def infer_impact_of_variables_2by2(tabnum):
     """Builds the first table of my report"""
 
     for n, p in enumerate(database.PROTOCOLS):
@@ -63,11 +63,11 @@ def test_impact_of_variables_2by2(tabnum):
         print(60 * "-")
 
         for k in itertools.combinations(database.VARIABLES, 2):
-            result = test_one(p, k)
+            result = infer_one(p, k)
             print(("%-30s" % " + ".join(k)), "| %d%%" % (100 * result,))
 
 
-def test_impact_of_variables_3by3(tabnum):
+def infer_impact_of_variables_3by3(tabnum):
     """Builds the first table of my report"""
 
     for n, p in enumerate(database.PROTOCOLS):
@@ -79,11 +79,11 @@ def test_impact_of_variables_3by3(tabnum):
         print(60 * "-")
 
         for k in itertools.combinations(database.VARIABLES, 3):
-            result = test_one(p, k)
+            result = infer_one(p, k)
             print(("%-45s" % " + ".join(k)), "| %d%%" % (100 * result,))
 
 
-def test_impact_of_variables_all(tabnum):
+def infer_impact_of_variables_all(tabnum):
     """Builds the first table of my report"""
 
     for k, p in enumerate(database.PROTOCOLS):
@@ -91,7 +91,7 @@ def test_impact_of_variables_all(tabnum):
         print("\nTable %d: All variables for Protocol `%s`:" % (k + tabnum, p))
         print(60 * "-")
 
-        result = test_one(p, database.VARIABLES)
+        result = infer_one(p, database.VARIABLES)
         print(
             ("%-45s" % " + ".join(database.VARIABLES)),
             "| %d%%" % (100 * result,),

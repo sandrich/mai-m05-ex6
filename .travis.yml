@@ -7,6 +7,7 @@ install:
   - pip install -r build-requirements.txt
 
 script:
+  - rr-paper  #test if the cmdline app runs at least
   - nosetests -sv --with-coverage --cover-package=rr rr #runs test
   - sphinx-build -b doctest doc sphinx
   - sphinx-build doc sphinx
