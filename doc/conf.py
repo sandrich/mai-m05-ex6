@@ -85,6 +85,7 @@ import time
 copyright = u"%s, Idiap Research Institute" % time.strftime("%Y")
 
 # Grab the setup entry
+import pkg_resources
 distribution = pkg_resources.require(project)[0]
 
 # The version info for the project you're documenting, acts as replacement for
