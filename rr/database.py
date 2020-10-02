@@ -4,9 +4,13 @@
 """Database specifications for an evaluation protocol based on the Iris Flower
 databases from Fisher's original work."""
 
-
 import numpy
 
+# We don't know where the file data.csv will be installed
+# on the user filesystem, we need to ask package management
+# where it is and load it from there.  We do this here.
+import pkg_resources
+DATAFILE = pkg_resources.resource_filename(__name__, "data.csv")
 
 # A list of protocols we implement
 PROTOCOLS = {
@@ -42,7 +46,7 @@ def load():
     import csv
 
     data = dict([(k, []) for k in CLASSES])
-    with open("data.csv", "rt") as f:
+    with open(DATAFILE, "rt") as f:
         reader = csv.reader(f)
         for k, row in enumerate(reader):
             if not k:
