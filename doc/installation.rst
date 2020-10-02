@@ -1,6 +1,6 @@
 .. vim: set fileencoding=utf-8 :
 
-.. _logreg_iris_installation:
+.. _rr_installation:
 
 
 Installation
@@ -13,7 +13,7 @@ Use pip:
    $ pip install --extra-index-url https://test.pypi.org/simple rr
 
 
-The tests on my paper were executed on a docker container using the image
-`fspr/lab:2019 <https://hub.docker.com/r/fspr/lab>`_.
+The tests on my paper were executed on Travis CI, consult our GitHub repository
+for operational details.
 
 .. include:: links.rst

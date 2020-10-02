@@ -1,6 +1,6 @@
 .. vim: set fileencoding=utf-8 :
 
-.. _logreg_iris:
+.. _rr:
 
 ===============================================================
  Reproducible Multi-Class Logistic Regression for Iris Flowers
@@ -35,7 +35,7 @@ Documentation
    installation
    guide
    troubleshooting
-   py_api
+   api
    license
 
 

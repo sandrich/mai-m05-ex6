@@ -1,6 +1,6 @@
 .. vim: set fileencoding=utf-8 :
 
-.. _logreg_iris_userguide:
+.. _rr_userguide:
 
 ============
  User Guide
