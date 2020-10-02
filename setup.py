@@ -1,17 +1,19 @@
 #!/usr/bin/env python
-# vim: set fileencoding=utf-8 :
+# coding=utf-8
 
 from setuptools import setup, find_packages
+
 
 def load_requirements(f):
     retval = [str(k.strip()) for k in open(f, "rt")]
     return [k for k in retval if k and k[0] not in ("#", "-")]
 
+
 setup(
     name="rr",
     version="1.0.4b0",
     description="Basic example of a Reproducible Research Project in Python",
-    url="https://gitlab.idiap.ch/software/master-ai-m05-ex6",
+    url="https://github.com/idiap/mai-m05-ex6",
     license="BSD",
     author="Andre Anjos",
     author_email="andre.anjos@idiap.ch",
