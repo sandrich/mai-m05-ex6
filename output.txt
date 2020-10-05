@@ -1,4 +1,4 @@
-Results of doctest builder run on 2020-10-05 13:12:50
+Results of doctest builder run on 2020-10-05 13:26:05
 =====================================================
 
 Document: guide
