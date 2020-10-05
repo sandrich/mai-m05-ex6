@@ -13,9 +13,6 @@ script:
   - sphinx-build doc sphinx
   - touch sphinx/.nojekyll
   - coveralls #uploads coverage report to coveralls.io
-  - python setup.py sdist
-  - twine check dist/*.tar.gz
-  - rm -rf dist rr.egg-info
 
 deploy:
   - provider: pages:git
