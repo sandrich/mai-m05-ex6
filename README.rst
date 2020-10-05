@@ -6,6 +6,8 @@
    :target: https://idiap.github.io/mai-m05-ex6/index.html
 .. image:: https://img.shields.io/badge/github-project-0000c0.svg
    :target: https://github.com/idiap/mai-m05-ex6
+.. image:: https://img.shields.io/badge/pypi-project-blueviolet.svg
+   :target: https://test.pypi.org/project/rr
 
 ===============================================================
  Reproducible Multi-Class Logistic Regression for Iris Flowers
